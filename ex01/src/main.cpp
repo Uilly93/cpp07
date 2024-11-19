@@ -1,6 +1,22 @@
 #include "../includes/Iter.hpp"
 #include "../includes/colors.hpp"
 
+template <typename A>
+void print(A &value) {
+	std::cout << GREEN << "[" << NGREEN << value << GREEN << "]" << RESET;
+}
+
+template <typename A>
+void incrementValue(A &value) {
+	++value;
+}
+
+template <typename A>
+void upper(A &value) {
+	for (int i = 0; value[i]; i++)
+		value[i] = std::toupper(value[i]);
+}
+
 int main() {
 	int array[] = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
 	std::string tab[] = {"bonjour", "voici", "le", "cpp", "07", "."};
