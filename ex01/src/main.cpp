@@ -22,5 +22,6 @@ int main() {
 	iter(tab, 6, upper<std::string>);
 	iter(array, 11, print<int>);
 	iter(tab, 6, print<std::string>);
+	std::cout << std::endl;
 	return 0;
 }
