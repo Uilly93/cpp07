@@ -1,8 +1,5 @@
 #include "../includes/Array.hpp"
 #include "../includes/colors.hpp"
-#include <cstddef>
-#include <cstdlib>
-#include <exception>
 #include <iostream>
 #include <sstream>
 
@@ -26,7 +23,7 @@ int main(void) {
 			Array<int> tab(ARRAY);
 			Array<int> tab2 = tab;
 			for (int i = 0; i < ARRAY; i++) {
-				tab2[i] = i; // i + 65;
+				tab2[i] = i;
 			}
 			tab2.print();
 		}
@@ -39,7 +36,7 @@ int main(void) {
 			Array<std::string> tab(ARRAY);
 			Array<std::string> tab2(tab);
 			for (std::size_t i = 0; i < ARRAY; i++) {
-				tab2[i] = to_string(i * 10); // i + 65;
+				tab2[i] = "hello world " + to_string(i * 10);
 			}
 			tab2.print();
 		}
